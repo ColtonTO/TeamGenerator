@@ -1,0 +1,26 @@
+{
+  "name": "teamgenerator",
+  "version": "1.0.0",
+  "description": "Team Generator application using Node.js, with tests.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColtonTO/TeamGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ColtonTO/TeamGenerator/issues"
+  },
+  "homepage": "https://github.com/ColtonTO/TeamGenerator#readme",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
