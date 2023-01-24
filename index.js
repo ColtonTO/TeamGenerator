@@ -8,6 +8,8 @@ const Engineer = require("./lib/engineer")
 const Intern = require("./lib/intern")
 const Manager = require("./lib/manager")
 
+const team = []
+
 const questions = () => {
     inquirer.prompt([
         {
@@ -56,6 +58,7 @@ const {name,id,email,school} = answers
 const newIntern = new Intern(name,id,email,school)
 team.push(newIntern)
 
+ask(team)
 }
 
 const genEngineer = async () => {
@@ -85,6 +88,7 @@ const {name,id,email,github} = answers
 const newEngineer = new Engineer(name,id,email,github)
 team.push(newEngineer)
 
+ask(team)
 }
 
 const genManager = async () => {
@@ -114,6 +118,17 @@ const {name,id,email,office}=answers
 const newManager = new Manager(name,id,email,office)
 team.push(newManager)
 
+ask(team)
+}
+
+const ask = async (team) => {
+    const answers = await inquirer.prompt({
+        type: "confirm",
+        name: "ask",
+        message: "Do you want to add anymore team members?",
+        default: false
+    })
+    if (answers.ask){questions()}
 }
 
 questions()
