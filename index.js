@@ -8,6 +8,8 @@ const Engineer = require("./lib/engineer")
 const Intern = require("./lib/intern")
 const Manager = require("./lib/manager")
 
+const genSite = require('./src/genSite')
+
 const team = []
 
 const questions = () => {
@@ -129,6 +131,11 @@ const ask = async (team) => {
         default: false
     })
     if (answers.ask){questions()}
+    else{genHTML(team)}
+}
+
+const genHTML = (team) => {
+    fs.writeFileSync('./dist/team.html', genSite(team), 'utf-8')
 }
 
 questions()
