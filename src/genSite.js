@@ -5,7 +5,7 @@ module.exports = function genSite(team) {
         team.forEach(member => {
             if (member.getRole() === 'Intern') {
                 template += ` <div class="col-sm-4 py-3">
-                <div class="card">
+                <div class="card shadow rounded">
                   <div class="text-center text-light bg-primary">
                       <p class="fs-2"></i>${member.name}</p>
                       <p class="fs-3"><i class="fa-solid fa-user-graduate"></i>Intern</p>
@@ -19,7 +19,7 @@ module.exports = function genSite(team) {
               </div>`
             } else if (member.getRole() === 'Manager') {
                 template += ` <div class="col-sm-4 py-3">
-                <div class="card">
+                <div class="card shadow rounded">
                   <div class="text-center text-light bg-primary">
                       <p class="fs-2">${member.name}</p>
                       <p class="fs-3"><i class="fas fa-coffee"></i>Manager</p>
@@ -33,7 +33,7 @@ module.exports = function genSite(team) {
               </div>`
             } else {
                 template += `<div class="col-sm-4 py-3">
-                <div class="card">
+                <div class="card shadow rounded">
                   <div class="text-center text-light bg-primary">
                       <p class="fs-2">${member.name}</p>
                       <p class="fs-3"><i class="fa-solid fa-glasses"></i>Engineer</p>
@@ -67,7 +67,7 @@ module.exports = function genSite(team) {
             </div>
           </header>
           <div class="container my-5">
-            <div class="row">
+            <div class="row justify-content-center">
     
             ${site()}
     
