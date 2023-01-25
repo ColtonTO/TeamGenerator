@@ -12,7 +12,7 @@ module.exports = function genSite(team) {
                   </div>
                   <div class="card-body list-group p-3">
                       <li class="list-group-item">ID: ${member.id}</li>
-                      <li class="list-group-item"><a href="mailto:${member.email}">Email: ${member.email}</a></li>
+                      <li class="list-group-item">Email: <a href="mailto:${member.email}">${member.email}</a></li>
                     <li class="list-group-item">School: ${member.school}</li>
                   </div>
                 </div>
@@ -26,7 +26,7 @@ module.exports = function genSite(team) {
                   </div>
                   <div class="card-body list-group p-3">
                       <li class="list-group-item">ID: ${member.id}</li>
-                      <li class="list-group-item"><a href="mailto:${member.email}">Email: ${member.email}</a></li>
+                      <li class="list-group-item">Email: <a href="mailto:${member.email}">${member.email}</a></li>
                     <li class="list-group-item">Office Number: ${member.office}</li>
                   </div>
                 </div>
@@ -40,7 +40,7 @@ module.exports = function genSite(team) {
                   </div>
                   <div class="card-body list-group p-3">
                       <li class="list-group-item">ID: ${member.id}</li>
-                      <li class="list-group-item"><a href="mailto:${member.email}">Email: ${member.email}</a></li>
+                      <li class="list-group-item">Email: <a href="mailto:${member.email}">${member.email}</a></li>
                     <li class="list-group-item"><a href="https://www.github.com/${member.github}">${member.github}</a></li>
                   </div>
                 </div>
