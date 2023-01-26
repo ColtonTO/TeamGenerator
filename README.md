@@ -7,11 +7,9 @@
 ## Table of Contents 
   - [Project Description](#Description)
   - [Usage](#Usage)
-  - [Contribution](#Contribution)
-  - [Installation](#Installation)
-  - [TestInstructions](#TestInstructions)
   - [Questions](#Questions)
   - [License](#License)
+  - [Screenshots](#Screenshots)
 
 ## Description
 This project was simply made to make a roster for a project you're working on. With this app, you can assign an engineer, intern, and manager to a roster displayed on an HTML page. This app also includes tests, using jest, to insure the app is ready for the production line.
