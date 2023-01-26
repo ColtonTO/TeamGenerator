@@ -16,11 +16,11 @@ This project was simply made to make a roster for a project you're working on. W
 
 ## Usage
 If you were to install this and try to get it running, here are the steps you need to get it working: 
-A) Install the repo
-B) Once installed, type 'npm install' in command line
-C) Type 'node index.js' into command line to begin app 
-D) In a 'dist' folder, you will see 'team.html', open that in your default browser 
-E) Congrats! You have a new epic team to help you with your project. 
+- Install the repo
+- Once installed, type 'npm install' in command line
+- Type 'node index.js' into command line to begin app 
+- In a 'dist' folder, you will see 'team.html', open that in your default browser 
+- Congrats! You have a new epic team to help you with your project. 
 
 ## Screenshots 
 ![Screenshot_20230126_032343](https://user-images.githubusercontent.com/116236745/214972847-971f3a69-4807-4966-9bfc-a0ba30c13712.png)
