@@ -1,5 +1,6 @@
 const Employee = require('../lib/employee.js')
 
+// test for actual employee object with base items 'string,number,string'
 test('Create employee object', () => {
     const employee = new Employee('John',1, 'JohnDoe@gmail.com');
 
@@ -8,6 +9,7 @@ test('Create employee object', () => {
     expect(employee.email).toEqual(expect.any(String))
 });
 
+// last four tests check for 'name,id,email,role' for an employee
 test('gets name', () => {
     const employee = new Employee('John', 2, 'JohnDoe@gmail.com');
 

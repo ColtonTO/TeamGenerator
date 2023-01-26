@@ -8,9 +8,12 @@ const Engineer = require("./lib/engineer")
 const Intern = require("./lib/intern")
 const Manager = require("./lib/manager")
 
+// template module
 const genSite = require('./src/genSite')
 
 const team = []
+
+// initialization function that starts the application
 
 const questions = () => {
     inquirer.prompt([
@@ -33,6 +36,7 @@ const questions = () => {
     )
 }
 
+// genIntern function that prompts user for name,id,email,school
 const genIntern = async () => {
 
     const answers = await inquirer.prompt([{
@@ -63,6 +67,7 @@ team.push(newIntern)
 ask(team)
 }
 
+// genEngineer function that prompts user for name,id,email,github
 const genEngineer = async () => {
 
     const answers = await inquirer.prompt([{
@@ -93,6 +98,7 @@ team.push(newEngineer)
 ask(team)
 }
 
+// genManager function that prompts user for name,id,email,officeid
 const genManager = async () => {
 
     const answers = await inquirer.prompt([{
@@ -123,6 +129,7 @@ team.push(newManager)
 ask(team)
 }
 
+// Last ask function loops in case the user wants to add more team members after initial prompts. 
 const ask = async (team) => {
     const answers = await inquirer.prompt({
         type: "confirm",
@@ -134,6 +141,7 @@ const ask = async (team) => {
     else{genHTML(team)}
 }
 
+// function that actually generates the file and path 
 const genHTML = (team) => {
     fs.writeFileSync('./dist/team.html', genSite(team), 'utf-8')
 }

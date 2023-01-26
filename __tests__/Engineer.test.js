@@ -1,5 +1,6 @@
 const Engineer = require('../lib/engineer')
 
+// all tests check and determine if 'name,id,email,github' are present
 test('gets name', () => {
     const engineer = new Engineer('John', 1, 'JohnDoe@gmail.com', 'githubusername01')
 

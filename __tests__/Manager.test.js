@@ -1,5 +1,6 @@
 const Manager = require('../lib/manager')
 
+// all tests check and determine if 'name,id,email,office#' are present
 test('gets name', () => {
     const manager = new Manager('John', 2, 'JohnDoe@gmail.com', 4);
 
